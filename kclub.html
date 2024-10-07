@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlubApp - McDonald's</title>
+    <link rel="stylesheet" href="klub.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div>
+            <h1>KLUB</h1>
+            <h2>LA ROCHELLE</h2>
+        </div>
+        <div class="notification-icon">
+            🔔
+        </div>
+    </header>
+
+    <!-- Establishments -->
+    <div class="establishments" id="establishment-list">
+        <!-- Example of one card for McDonald's -->
+        <div class="establishment-card" onclick="openDetails('McDonalds')">
+            <img src="https://via.placeholder.com/100" alt="McDonald's">
+            <div class="heart-icon">❤️</div>
+        </div>
+    </div>
+
+    <!-- Details Modal -->
+    <div class="establishment-details" id="details-modal">
+        <div class="details-header">
+            <button id="close-details">⬅️</button>
+            <button id="toggle-favorite">❤️</button>
+        </div>
+        <div class="details-content" id="details-content">
+            <!-- The McDonald's offer will be shown dynamically -->
+        </div>
+    </div>
+
+    <script src="kclubia.js"></script>
+</body>
+</html>

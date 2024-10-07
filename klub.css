@@ -1,0 +1,185 @@
+/* Style de base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+  color: #e91e63;
+  font-size: 1.8rem;
+}
+
+.header h2 {
+  color: #2196f3;
+  font-size: 1rem;
+}
+
+.notification-icon {
+  font-size: 1.5rem;
+}
+
+.establishment-card {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 1rem 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.establishment-card img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.establishment-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 1000;
+  overflow-y: auto;
+  display: none;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.establishment-details.active {
+  display: flex;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.details-content {
+  padding: 1rem;
+}
+
+.offer {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.offer h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #e91e63;
+}
+
+.offer p {
+  margin: 0.5rem 0;
+}
+
+.offer button {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.offer.ponctuelle button {
+  background-color: #fddde6;
+  color: #e91e63;
+}
+
+.offer.ponctuelle.used button {
+  background-color: #f8e2e7;
+  color: #f0b3c1;
+  cursor: not-allowed;
+}
+
+.offer.permanente button {
+  background-color: #d1e8ff;
+  color: #2196f3;
+}
+
+.offer .show-card {
+  background-color: #b2ebf2;
+  color: #00acc1;
+}
+
+/* Styles spécifiques pour les mobiles et iPhone 12 */
+@media (max-width: 390px) {
+  .header h1 {
+      font-size: 1.5rem;
+  }
+
+  .header h2 {
+      font-size: 0.9rem;
+  }
+
+  .notification-icon {
+      font-size: 1.2rem;
+  }
+
+  .establishment-card {
+      padding: 0.8rem;
+      margin: 0.8rem 0;
+  }
+
+  .establishment-card img {
+      width: 70px;
+  }
+
+  .establishment-details {
+      padding: 1rem;
+  }
+
+  .details-header {
+      padding-bottom: 0.8rem;
+  }
+
+  .details-content {
+      padding: 0.8rem;
+  }
+
+  .offer h3 {
+      font-size: 1rem;
+  }
+
+  .offer p {
+      font-size: 0.9rem;
+  }
+
+  .offer button {
+      padding: 0.4rem;
+      font-size: 0.9rem;
+  }
+
+  .offer.ponctuelle.used button {
+      font-size: 0.85rem;
+  }
+
+  .offer .show-card {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+  }
+}
